@@ -1,14 +1,12 @@
 
-LabText.h is now a single file text parsing utility.
+**This is for my own purposes. Please use the original LabText from Nick Porcino**
 
-To use LabText.h, include it in your project, and include it at once defining
-LABTEXT_ODR to cause the functions to be compiled into your program.
 
 There are two interfaces to LabText; the old char* oriented version, and a new
 interface based around a StrView struct. The char* interfaces are deprecated and
 will be removed.
 
-StrView is extremely simple, and has no std dependencies or affordances. The
+StrView is extremely simple, and has no std dependencies or affordances (but std::vector). The
 sole purpose of StrView is to represent a non-owning view on a buffer of char.
 
 ```cpp
